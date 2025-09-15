@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RegisterDialog2</class>
+ <widget class="QWidget" name="RegisterDialog2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>582</width>
+    <height>495</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* QLineEdit 样式 */
+QLineEdit {
+    color: white;
+       font-family: &quot;Microsoft YaHei&quot;;
+	background-color: lightblue;
+    font-size: 24px; /* 提高字体大小 */
+    border-style: outset;
+    border-radius: 10px;
+
+border: 2px solid #87CEEB; /* 增加边框以突出输入框 */
+}
+
+
+/* QLabel 样式 */
+QLabel {
+ font-family: &quot;Microsoft YaHei&quot;;
+	background: rgba(85, 170, 255, 0);
+    color: black; /* 黑色字体 */
+    font-size: 24px; /* 字体大小 */
+    padding: 2px; /* 内边距 */
+
+    text-align: center; /* 居中对齐 */
+}
+QRadioButton{
+font-family: &quot;Microsoft YaHei&quot;;
+font-size: 20px; /* 字体大小 */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>59</x>
+     <y>61</y>
+     <width>132</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="register_userName">
+      <property name="text">
+       <string>用户名</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="register_userPassword">
+      <property name="text">
+       <string>设置密码</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="register_confirmPassword">
+      <property name="text">
+       <string>确认密码</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="register_userSex">
+      <property name="text">
+       <string>性别</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="register_userPhoneNumber">
+      <property name="text">
+       <string>手机号</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLineEdit" name="phoneNumberLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>189</x>
+     <y>291</y>
+     <width>261</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="passwordLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>125</y>
+     <width>261</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="confirmPassword">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>180</y>
+     <width>261</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="registerButton">
+   <property name="geometry">
+    <rect>
+     <x>229</x>
+     <y>381</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 28px;
+    color: white;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                  stop:0 #FDC245, stop:1 #FB9E23);
+border-radius: 10px;
+
+}
+QPushButton:hover {
+background-color:#FAC85C;
+}</string>
+   </property>
+   <property name="text">
+    <string>注册</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>189</x>
+     <y>231</y>
+     <width>264</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QRadioButton" name="male">
+      <property name="text">
+       <string>男</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="female">
+      <property name="text">
+       <string>女</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="otherSex">
+      <property name="text">
+       <string>其他</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLineEdit" name="userNameLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>70</y>
+     <width>261</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

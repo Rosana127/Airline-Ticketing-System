@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>buymenu</class>
+ <widget class="QWidget" name="buymenu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1910</width>
+    <height>911</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+	background-color: #FFFFFF
+
+}
+Qpushbutton{
+	color: lightblue;
+}
+
+
+
+</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>150</y>
+     <width>1901</width>
+     <height>511</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <widget class="QLabel" name="leftTicket">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>50</y>
+         <width>161</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 28px;
+    color:black;
+	background-color: #FFFFFF
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>余票：67张</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>40</y>
+         <width>151</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QLabel {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 20px;
+    color:#575FF5;
+	background-color: #FFFFFF
+}</string>
+       </property>
+       <property name="text">
+        <string>托运行李额20kg</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buy">
+       <property name="geometry">
+        <rect>
+         <x>1300</x>
+         <y>50</y>
+         <width>81</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 28px;
+    color: white;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                  stop:0 #FDC245, stop:1 #FB9E23);
+border-radius: 10px;
+
+}
+QPushButton:hover {
+background-color:#FAC85C;
+}</string>
+       </property>
+       <property name="text">
+        <string>预定</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>70</y>
+         <width>151</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QLabel {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 20px;
+    color:#575FF5;
+	background-color: #FFFFFF
+}</string>
+       </property>
+       <property name="text">
+        <string>24h免改期费</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="price">
+       <property name="geometry">
+        <rect>
+         <x>890</x>
+         <y>40</y>
+         <width>151</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    font-family: &quot;Microsoft Yahei&quot;;
+    font-size:28px;
+    color:#0178EF;
+	background-color: #FFFFFF
+
+}</string>
+       </property>
+       <property name="text">
+        <string>￥460</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="model">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>50</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 28px;
+    color:black;
+	background-color: #FFFFFF
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>经济舱</string>
+       </property>
+      </widget>
+      <widget class="QListView" name="listView_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1900</width>
+         <height>151</height>
+        </rect>
+       </property>
+      </widget>
+      <zorder>listView_2</zorder>
+      <zorder>leftTicket</zorder>
+      <zorder>label</zorder>
+      <zorder>buy</zorder>
+      <zorder>label_2</zorder>
+      <zorder>price</zorder>
+      <zorder>model</zorder>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_3" native="true">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <widget class="QLabel" name="leftTicket_bus">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>50</y>
+         <width>161</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 28px;
+    color:black;
+	background-color: #FFFFFF
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>余票：30张</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>40</y>
+         <width>151</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QLabel {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 20px;
+    color:#575FF5;
+	background-color: #FFFFFF
+}</string>
+       </property>
+       <property name="text">
+        <string>托运行李额30kg</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buy_bus">
+       <property name="geometry">
+        <rect>
+         <x>1300</x>
+         <y>50</y>
+         <width>81</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 28px;
+    color: white;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                  stop:0 #FDC245, stop:1 #FB9E23);
+border-radius: 10px;
+
+}
+QPushButton:hover {
+background-color:#FAC85C;
+}</string>
+       </property>
+       <property name="text">
+        <string>预定</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>70</y>
+         <width>151</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QLabel {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 20px;
+    color:#575FF5;
+	background-color: #FFFFFF
+}</string>
+       </property>
+       <property name="text">
+        <string>24h免改期费</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="price_bus">
+       <property name="geometry">
+        <rect>
+         <x>890</x>
+         <y>40</y>
+         <width>151</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    font-family: &quot;Microsoft Yahei&quot;;
+    font-size:28px;
+    color:#0178EF;
+	background-color: #FFFFFF
+
+}</string>
+       </property>
+       <property name="text">
+        <string>￥900</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="model_bus">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>50</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 28px;
+    color:black;
+	background-color: #FFFFFF
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>商务舱</string>
+       </property>
+      </widget>
+      <widget class="QListView" name="listView_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1900</width>
+         <height>151</height>
+        </rect>
+       </property>
+      </widget>
+      <zorder>listView_3</zorder>
+      <zorder>leftTicket_bus</zorder>
+      <zorder>label_7</zorder>
+      <zorder>buy_bus</zorder>
+      <zorder>label_8</zorder>
+      <zorder>price_bus</zorder>
+      <zorder>model_bus</zorder>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_4" native="true">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <widget class="QLabel" name="leftTicket_head">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>50</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 28px;
+    color:black;
+	background-color: #FFFFFF
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>余票：5张</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>40</y>
+         <width>151</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QLabel {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 20px;
+    color:#575FF5;
+	background-color: #FFFFFF
+}</string>
+       </property>
+       <property name="text">
+        <string>托运行李额40kg</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="buy_head">
+       <property name="geometry">
+        <rect>
+         <x>1300</x>
+         <y>50</y>
+         <width>81</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 28px;
+    color: white;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                  stop:0 #FDC245, stop:1 #FB9E23);
+border-radius: 10px;
+
+}
+QPushButton:hover {
+background-color:#FAC85C;
+}</string>
+       </property>
+       <property name="text">
+        <string>预定</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>70</y>
+         <width>151</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QLabel {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 20px;
+    color:#575FF5;
+	background-color: #FFFFFF
+}</string>
+       </property>
+       <property name="text">
+        <string>24h免改期费</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="price_head">
+       <property name="geometry">
+        <rect>
+         <x>890</x>
+         <y>40</y>
+         <width>151</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    font-family: &quot;Microsoft Yahei&quot;;
+    font-size:28px;
+    color:#0178EF;
+	background-color: #FFFFFF
+
+}</string>
+       </property>
+       <property name="text">
+        <string>￥1700</string>
+       </property>
+      </widget>
+      <widget class="QListView" name="listView_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1900</width>
+         <height>141</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="model_head">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>50</y>
+         <width>141</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 28px;
+    color:black;
+	background-color: #FFFFFF
+
+}
+</string>
+       </property>
+       <property name="text">
+        <string>头等舱</string>
+       </property>
+      </widget>
+      <zorder>listView_4</zorder>
+      <zorder>leftTicket_head</zorder>
+      <zorder>label_9</zorder>
+      <zorder>buy_head</zorder>
+      <zorder>label_10</zorder>
+      <zorder>price_head</zorder>
+      <zorder>model_head</zorder>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1900</width>
+     <height>150</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="numberEdit">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>90</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QLabel {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 20px;
+    color:#0178EF;
+	background-color: #FFFFFF
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string>FM1989</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>60</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    border-radius: 20px; /* 圆形 */
+    border-image: url(:/new/prefix1/images/row.jpg);
+    width: 50px; /* 设置按钮宽度 */
+    height: 50px; /* 设置按钮高度 */
+	color:black;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="departTime">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>30</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-family: &quot;Microsoft Yahei&quot;;
+    font-size: 40px;
+    color:black;
+	background-color: #FFFFFF
+
+}</string>
+    </property>
+    <property name="text">
+     <string>11:07:00</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="departAir">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>90</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-family: &quot;Microsoft Yahei&quot;;
+    font-size: 20px;
+    color:#FD8743;
+	background-color: #FFFFFF
+
+}</string>
+    </property>
+    <property name="text">
+     <string>广州白云机场T1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="modelEdit">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>90</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 20px;
+    color:#0178EF;
+	background-color: #FFFFFF
+
+}</string>
+    </property>
+    <property name="text">
+     <string>中机型</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="arrivalTime">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>30</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-family: &quot;Microsoft Yahei&quot;;
+    font-size: 40px;
+    color:black;
+	background-color: #FFFFFF
+
+}</string>
+    </property>
+    <property name="text">
+     <string>13:07:00</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="companyEdit">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>40</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 28px;
+    color:black;
+	background-color: #FFFFFF
+
+}
+</string>
+    </property>
+    <property name="text">
+     <string>厦门航空</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="arrivalAir">
+    <property name="geometry">
+     <rect>
+      <x>870</x>
+      <y>90</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    font-family: &quot;Microsoft Yahei&quot;;
+    font-size: 20px;
+    color:#FD8743;
+	background-color: #FFFFFF
+
+}</string>
+    </property>
+    <property name="text">
+     <string>合肥新桥国际机场T3</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>1330</x>
+      <y>110</y>
+      <width>61</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font-family: &quot;Microsoft YaHei&quot;;
+    background-color: rgba(255, 255, 255, 0.5); /* 半透明背景 */
+    border: 1px solid gray; /* 边框 */
+    border-radius: 5px; /* 圆角 */
+    width: 30px; /* 统一宽度 */
+    height: 30px; /* 统一高度 */
+    font-size: 14px; /* 文字大小 */
+    color: black; /* 字体颜色 */
+}
+
+</string>
+    </property>
+    <property name="text">
+     <string>返回</string>
+    </property>
+   </widget>
+   <widget class="QListView" name="listView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>-110</y>
+      <width>1910</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+  </widget>
+  <zorder>widget_2</zorder>
+  <zorder>layoutWidget</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>manager1226</class>
+ <widget class="QWidget" name="manager1226">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1910</width>
+    <height>998</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1900</width>
+     <height>998</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+/* QFrame 样式 */
+QFrame {
+    border: solid 10px rgba(0, 0, 0);
+    background-image: url(:/pictures/airplane3.jpg); /* 确保路径有效 */
+    background-position: center; /* 居中显示 */
+    background-repeat: no-repeat; /* 防止重复 */
+    background-size: contain; /* 自动缩放填充窗口 */
+}
+
+QPushButton {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 28px;
+    color: white;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                  stop:0 #FDC245, stop:1 #FB9E23);
+border-radius: 20px;
+
+}
+QPushButton:hover {
+background-color:#FAC85C;
+}
+
+QCommandLinkButton {
+	font-family: &quot;Microsoft YaHei&quot;;
+    background: transparent;   /* 背景透明 */
+    color: white;              /* 字体颜色为白色 */
+    font-size: 20pt;           /* 设置字体大小为10pt */
+    border: none;              /* 去掉边框 */
+    padding: 5px;              /* 调整按钮内部间距，可以根据需要微调 */
+}
+
+/* QLineEdit 样式 */
+QLineEdit {
+    color: skyblue;
+   /* background-color: #506371;*/
+	background-color: white;
+    font-size: 28px; /* 提高字体大小 */
+    border-style: outset;
+    border-radius: 10px;
+    font-family: &quot;Microsoft YaHei&quot;;
+    padding: 5px; /* 增加内边距 */
+}
+
+
+
+
+
+QLabel {
+    font-family: &quot;Microsoft YaHei&quot;;
+    color: white;          /* 文字颜色设置为白色 */
+	background-color: transparent;
+    font-size: 40px;       /* 设置字体大小 */
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="loginButton">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>710</y>
+      <width>201</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>登录</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_password">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>360</y>
+      <width>431</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+    <property name="placeholderText">
+     <string>Please input Password</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txt_user">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>260</y>
+      <width>431</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="placeholderText">
+     <string>Please input UserName</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>260</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel{
+background-color: transparent;
+}</string>
+    </property>
+    <property name="text">
+     <string>员工号</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>360</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>密码</string>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="registerButton">
+    <property name="geometry">
+     <rect>
+      <x>1230</x>
+      <y>520</y>
+      <width>251</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>新员工注册</string>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>100</number>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="forgetButton">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>520</y>
+      <width>186</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>忘记密码</string>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="userLogin">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>371</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QCommandLinkButton {
+	font-family: &quot;Microsoft YaHei&quot;;
+    background: transparent;   /* 背景透明 */
+    color: white;              /* 字体颜色为白色 */
+    font-size: 24pt;           /* 设置字体大小为10pt */
+    border: none;              /* 去掉边框 */
+    padding: 5px;              /* 调整按钮内部间距，可以根据需要微调 */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>跳转回用户登录</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>images/clouds.jpg</file>
+        <file>images/delete.jpg</file>
+        <file>images/flyer_login.jpg</file>
+        <file>images/left_month.jpg</file>
+        <file>images/left_year.jpg</file>
+        <file>images/row.jpg</file>
+        <file>images/swap.jpg</file>
+        <file>images/right_month.jpg</file>
+        <file>images/right_year.jpg</file>
+        <file>images/logo.jpg</file>
+        <file>images/airplane1.jpg</file>
+        <file>images/airplane2.jpg</file>
+        <file>images/airplane3.jpg</file>
+        <file>images/airplane4.jpg</file>
+        <file>images/shouti.png</file>
+        <file>images/tuoyun.png</file>
+        <file>images/alipy.png</file>
+        <file>images/visa.png</file>
+        <file>images/wechatpy.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>pictures/airplane4.jpg</file>
+        <file>pictures/airplane3.jpg</file>
+        <file>manageStyle.qss</file>
+    </qresource>
+</RCC>

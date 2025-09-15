@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UserInfoPage</class>
+ <widget class="QWidget" name="UserInfoPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1900</width>
+    <height>636</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>User Info</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* QLineEdit 样式 */
+QLineEdit {
+    color: white;
+       font-family: &quot;Microsoft YaHei&quot;;
+	background-color: lightblue;
+    font-size: 28px; /* 提高字体大小 */
+    border-style: outset;
+    border-radius: 10px;
+
+border: 2px solid #87CEEB; /* 增加边框以突出输入框 */
+}
+
+
+/* QLabel 样式 */
+QLabel {
+ font-family: &quot;Microsoft YaHei&quot;;
+	background: rgba(85, 170, 255, 0);
+    color: black; /* 黑色字体 */
+    font-size: 28px; /* 字体大小 */
+    padding: 2px; /* 内边距 */
+
+    text-align: center; /* 居中对齐 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</string>
+  </property>
+  <widget class="QLabel" name="displayUserName">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>90</y>
+     <width>161</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>王先生</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="displayGender">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>180</y>
+     <width>39</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>35</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>男</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="editCurrentPassword">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>270</y>
+     <width>212</width>
+     <height>37</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>37</height>
+    </size>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::PasswordEchoOnEdit</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="editPassword">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>360</y>
+     <width>212</width>
+     <height>37</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>37</height>
+    </size>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::PasswordEchoOnEdit</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonChangePassword">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>300</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 28px;
+    color: white;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                  stop:0 #FDC245, stop:1 #FB9E23);
+border-radius: 10px;
+
+}
+QPushButton:hover {
+background-color:#FAC85C;
+}</string>
+   </property>
+   <property name="text">
+    <string>修改密码</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="editCurrentPhoneNumber">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>460</y>
+     <width>212</width>
+     <height>37</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>37</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="editPhoneNumber">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>550</y>
+     <width>212</width>
+     <height>37</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>37</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonChangePhoneNumber">
+   <property name="geometry">
+    <rect>
+     <x>1030</x>
+     <y>500</y>
+     <width>181</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 28px;
+    color: white;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                  stop:0 #FDC245, stop:1 #FB9E23);
+border-radius: 10px;
+
+}
+QPushButton:hover {
+background-color:#FAC85C;
+}</string>
+   </property>
+   <property name="text">
+    <string>修改手机号</string>
+   </property>
+  </widget>
+  <widget class="QSplitter" name="splitter">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>60</y>
+     <width>251</width>
+     <height>551</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <widget class="QLabel" name="labelUserName">
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+      <pointsize>-1</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>姓名</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelGender">
+    <property name="text">
+     <string>性别</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelCurrentPassword">
+    <property name="text">
+     <string>请输入当前密码</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelNewPassword">
+    <property name="text">
+     <string>请输入新密码</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelCurrentPhoneNumber">
+    <property name="text">
+     <string>请输入当前手机号</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelNewPhoneNumber">
+    <property name="text">
+     <string>请输入新的手机号</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>splitter</zorder>
+  <zorder>displayUserName</zorder>
+  <zorder>displayGender</zorder>
+  <zorder>editCurrentPassword</zorder>
+  <zorder>editPassword</zorder>
+  <zorder>buttonChangePassword</zorder>
+  <zorder>editCurrentPhoneNumber</zorder>
+  <zorder>editPhoneNumber</zorder>
+  <zorder>buttonChangePhoneNumber</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

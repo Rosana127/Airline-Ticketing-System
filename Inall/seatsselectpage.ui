@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SeatsSelectPage</class>
+ <widget class="QWidget" name="SeatsSelectPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1900</width>
+    <height>911</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Seats Select Page</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 28px;
+    color: white;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                  stop:0 #FDC245, stop:1 #FB9E23);
+border-radius: 10px;
+
+}
+QPushButton:hover {
+background-color:#FAC85C;
+}
+/* QLineEdit 样式 */
+QLineEdit {
+    color: white;
+       font-family: &quot;Microsoft YaHei&quot;;
+	background-color: lightblue;
+    font-size: 28px; /* 提高字体大小 */
+    border-style: outset;
+    border-radius: 10px;
+
+border: 2px solid #87CEEB; /* 增加边框以突出输入框 */
+}
+
+
+/* QLabel 样式 */
+QLabel {
+ font-family: &quot;Microsoft YaHei&quot;;
+	background: rgba(85, 170, 255, 0);
+    color: black; /* 黑色字体 */
+    font-size: 28px; /* 字体大小 */
+    padding: 2px; /* 内边距 */
+
+    text-align: center; /* 居中对齐 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</string>
+  </property>
+  <widget class="QLineEdit" name="flightNumberEdit">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>90</y>
+     <width>321</width>
+     <height>51</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loadSeatsButton">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>240</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>查询座位</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="orderIDEdit">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>160</y>
+     <width>321</width>
+     <height>51</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QScrollArea" name="scrollArea">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>290</y>
+     <width>700</width>
+     <height>500</height>
+    </rect>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="seatLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>698</width>
+      <height>498</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>100</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>请输入航班号</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>160</y>
+     <width>281</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>请输入订单号</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

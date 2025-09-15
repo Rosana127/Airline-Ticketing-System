@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>flisingle</class>
+ <widget class="QWidget" name="flisingle">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1910</width>
+    <height>157</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#flisingle {
+    color: #101011;
+	border-radius: 20px;
+	border: 6px solid #EAEBEB;  /* 设置边框宽度为 2px，颜色为浅灰色 */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* 设置边框阴影效果 */
+
+}
+QWidget#flisingle:hover {
+    border: 10px solid #D0D0D1;  /* 鼠标悬停时改变边框颜色（蓝色） */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);  /* 增强阴影效果 */
+}</string>
+  </property>
+  <widget class="QLabel" name="companyEdit">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>30</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 28px;
+    color:black;
+	background-color: #FFFFFF
+
+}
+</string>
+   </property>
+   <property name="text">
+    <string>海南航空</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="numberEdit">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>70</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 20px;
+    color:#0178EF;
+	background-color: #FFFFFF
+
+}</string>
+   </property>
+   <property name="text">
+    <string>FM1979</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="modelEdit">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>70</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 20px;
+    color:#0178EF;
+	background-color: #FFFFFF
+
+}</string>
+   </property>
+   <property name="text">
+    <string>大机型</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="departTime">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>20</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    font-family: &quot;Microsoft Yahei&quot;;
+    font-size: 40px;
+    color:black;
+	background-color: #FFFFFF
+
+}</string>
+   </property>
+   <property name="text">
+    <string>10:07:35</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="arrivalTime">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>20</y>
+     <width>161</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    font-family: &quot;Microsoft Yahei&quot;;
+    font-size: 40px;
+    color:black;
+	background-color: #FFFFFF
+
+}</string>
+   </property>
+   <property name="text">
+    <string>12:09:09</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="departAir">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>80</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+QLabel {
+    font-family: &quot;Microsoft Yahei&quot;;
+    font-size: 20px;
+    color:#FD8743;
+	background-color: #FFFFFF
+
+}</string>
+   </property>
+   <property name="text">
+    <string>武汉天河机场T3</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="arrivalAir">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>80</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    font-family: &quot;Microsoft Yahei&quot;;
+    font-size: 20px;
+    color:#FD8743;
+	background-color: #FFFFFF
+
+}</string>
+   </property>
+   <property name="text">
+    <string>浦东国际机场T2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="price">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>40</y>
+     <width>151</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    font-family: &quot;Microsoft Yahei&quot;;
+    font-size:36px;
+    color:#0178EF;
+	background-color: #FFFFFF
+
+}</string>
+   </property>
+   <property name="text">
+    <string>￥700起</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buy">
+   <property name="geometry">
+    <rect>
+     <x>1300</x>
+     <y>50</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+
+QPushButton {
+    font-family: &quot;Microsoft YaHei&quot;;
+    font-size: 28px;
+    color: white;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                  stop:0 #FDC245, stop:1 #FB9E23);
+border-radius: 10px;
+
+}
+QPushButton:hover {
+background-color:#FAC85C;
+}</string>
+   </property>
+   <property name="text">
+    <string>订票</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>50</y>
+     <width>121</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    border-radius: 20px; /* 圆形 */
+    border-image: url(:/new/prefix1/images/row.jpg);
+    width: 50px; /* 设置按钮宽度 */
+    height: 50px; /* 设置按钮高度 */
+	color:black;
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QListView" name="listView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>1900</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QListView {
+    color: white;
+	border-radius: 20px;
+
+}
+QListView:hover {
+color:lightgrey;
+border: 30px solid #D0D0D1;  /* 鼠标悬停时改变边框颜色（蓝色） */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);  /* 增强阴影效果 */
+}
+
+</string>
+   </property>
+  </widget>
+  <zorder>listView</zorder>
+  <zorder>companyEdit</zorder>
+  <zorder>numberEdit</zorder>
+  <zorder>modelEdit</zorder>
+  <zorder>departTime</zorder>
+  <zorder>arrivalTime</zorder>
+  <zorder>departAir</zorder>
+  <zorder>arrivalAir</zorder>
+  <zorder>price</zorder>
+  <zorder>buy</zorder>
+  <zorder>pushButton</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

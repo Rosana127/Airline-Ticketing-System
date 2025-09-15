@@ -1,0 +1,140 @@
+<!DOCTYPE RCC>
+<RCC version="1.0"/>
+
+
+/* 全局样式 */
+* {
+    background: rgb(255, 255, 255);
+    font-size: 24px; /* 调大字体以适应全屏 */
+    font-family: "MingLiU-ExtB";
+}
+
+/* QFrame 样式 */
+QFrame {
+    border: solid 10px rgba(0, 0, 0);
+    background-image: url(:/pictures/airplane4.jpg); /* 确保路径有效 */
+    background-position: center; /* 居中显示 */
+    background-repeat: no-repeat; /* 防止重复 */
+    background-size: contain; /* 自动缩放填充窗口 */
+}
+
+/* QLineEdit 样式 */
+QLineEdit {
+    color: #C6D8E5;
+   /* background-color: #506371;*/
+        background-color: #4F708C;
+    font-size: 20px; /* 提高字体大小 */
+    border-style: outset;
+    border-radius: 10px;
+    font-family: "MingLiU-ExtB";
+    padding: 5px; /* 增加内边距 */
+}
+
+
+
+/* QPushButton 样式 */
+QPushButton {
+    background: #ced1d8;
+    border-style: outset;
+    border-radius: 10px;
+    font-family: "MingLiU-ExtB";
+    font-size: 18px; /* 按钮字体变大 */
+    padding: 10px; /* 增加内边距以改善外观 */
+}
+
+QPushButton:pressed {
+    background-color: rgb(224, 0, 0);
+    border-style: inset;
+    font-family: "MingLiU-ExtB";
+}
+
+
+
+/* QLabel 样式 */
+QLabel {
+    background: rgba(85, 170, 255, 0);
+    color: white;
+    font-family: "MingLiU-ExtB";
+    font-size: 22px; /* 提高字体大小 */
+    text-align: center; /* 居中对齐文字 */
+}
+
+/*最小化和关闭按钮*/
+/* QToolButton 样式：最小化和关闭按钮 */
+QToolButton#minimizeButton, QToolButton#closeButton {
+    background-color: rgba(255, 255, 255, 0.5); /* 半透明背景 */
+    border: 1px solid gray; /* 边框 */
+    border-radius: 5px; /* 圆角 */
+    width: 30px; /* 统一宽度 */
+    height: 30px; /* 统一高度 */
+    font-size: 14px; /* 文字大小 */
+    color: black; /* 字体颜色 */
+}
+
+/* 悬停效果 */
+QToolButton#toolButton:hover, QToolButton#toolButton_2:hover {
+    background-color: rgba(200, 200, 200, 0.8); /* 悬停时颜色变化 */
+}
+
+/* 特殊样式：关闭按钮 */
+QToolButton#toolButton_2 {
+   QToolButton#toolButton_2 {
+    background-color: rgba(255, 100, 100, 0.8); /* 关闭按钮默认背景颜色 */
+}
+}
+
+QToolButton#toolButton_2:hover {
+    background-color: rgba(255, 50, 50, 1); /* 关闭按钮悬停时变深红色 */
+}
+
+
+QMessageBox {
+    background-color: white;   /* 白色背景 */
+    color: #333333;            /* 深灰色文字，代替传统的深蓝色，使其更现代 */
+    font-family: 'Segoe UI', Tahoma, sans-serif; /* 更现代的字体 */
+    font-size: 14px;           /* 适当增大字体，提升可读性 */
+    border-radius: 8px;        /* 圆角边框 */
+    border: none;              /* 去掉边框线，使用阴影来代替边框 */
+    padding: 20px;             /* 增加内边距 */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* 添加柔和的阴影效果 */
+}
+
+/* 设置 QMessageBox 按钮的样式 */
+QMessageBox QPushButton {
+    background-color: #0078D4; /* 蓝色按钮背景 */
+    color: white;              /* 按钮文字白色 */
+    border: none;              /* 去掉按钮边框 */
+    border-radius: 5px;        /* 圆角按钮 */
+    padding: 10px 20px;        /* 按钮内边距 */
+    font-size: 15px;           /* 适中的字体大小 */
+    transition: background-color 0.3s, transform 0.1s ease-in-out; /* 平滑过渡效果 */
+}
+
+/* 按钮悬停效果 */
+QMessageBox QPushButton:hover {
+    background-color: #005A9E; /* 按钮悬停时变为深蓝色 */
+    transform: scale(1.05);     /* 悬停时稍微放大按钮 */
+}
+
+/* 按钮点击效果 */
+QMessageBox QPushButton:pressed {
+    background-color: #003B6B;  /* 按钮按下时背景变为更深的蓝色 */
+    transform: scale(0.95);     /* 按钮按下时稍微缩小 */
+}
+
+/* 设置 QMessageBox 的标题栏样式 */
+QMessageBox QLabel[title="true"] {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #0078D4; /* 蓝色背景 */
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px; /* 添加底部间距，使得标题不紧凑 */
+}
+
+/* 设置 QMessageBox 图标的样式 */
+QMessageBox QLabel {
+    font-size: 12px;
+    color: #0078D4;  /* 图标的颜色与按钮一致，营造统一感 */
+}
