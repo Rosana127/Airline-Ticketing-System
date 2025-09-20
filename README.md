@@ -48,7 +48,7 @@ Administrators can add, delete, modify, and query flights, ensuring efficient fl
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/your-username/Airline-Ticketing-Systeam.git
+git clone https://github.com/your-username/Airline-Ticketing-System.git
 cd sse-flight-management
 ```
 
